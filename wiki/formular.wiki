@@ -1,0 +1,54 @@
+CONCEPT  DEFINE:
+                   
+
+
+formular is two son tree,  has 3 kind of tree node.
+1.  operator (including + - * / =)
+2.  parameter
+3.  number (non zero unsign integer)
+
+leaf node type can be and only can be paramter or number.
+operator node must have two sons.
+
+!!!NOTE:
+    All operator with same priority. if you want to change the priority, use ().
+    zero not support for zero may cause calcuate exception.
+
+example:
+1.
+    experssion:         2
+    formular tree:    (2)
+
+2.
+    experssion:         section_lenth
+    formular tree:    (section_lenth)
+
+3.
+    experssion:         A + 2
+    formular tree:    (+)
+                        /     \
+                      (A)      (2)
+
+4.
+    experssion:        3 * A  + (B - 2 ) + C
+    formular tree:  
+                                     (+) 
+                                  /       \
+                             (+)           (C)
+                          /       \
+                      (*)          (-)
+                    /     \        /   \
+                  (3)      (A) (B)    (2)
+
+5.
+    experssion:        3 + A  - B * 2  = 5
+    formular tree:  
+                                   (=) 
+                                /       \
+                            (*)          (5)
+                          /      \
+                       (-)        (2)
+                     /     \      
+                  (+)      (B)
+                /     \      
+             (3)      (A)
