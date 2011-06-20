@@ -2,7 +2,7 @@ CONCEPT  DEFINE:
                    
 
 
-formular is two son tree,  has 3 kind of tree node.
+        formular is two son tree,  has 3 kind of tree node.
 1.  operator (including + - * / =)
 2.  parameter
 3.  number (non zero unsign integer)
@@ -25,7 +25,7 @@ example:
 
 3.
     experssion:         A + 2
-    formular tree:    (+)
+    formular tree:       (+)
                         /     \
                       (A)      (2)
 
