@@ -1,37 +1,42 @@
-CONCEPT  DEFINE:
+         
+=FORMULA CONCEPT  DEFINE:=
                    
 
 
-        formular is two son tree,  has 3 kind of tree node.
-1.  operator (including + - * / =)
-2.  parameter
-3.  number (non zero unsign integer)
+  formula is two son tree,  has 3 kind of tree node.
+   #  operator (including + - `*` / =)
+   #  parameter
+   #  number (non zero unsign integer)
 
-leaf node type can be and only can be paramter or number.
-operator node must have two sons.
+  leaf node type can be and only can be paramter or number.
+  operator node must have two sons.
 
-!!!NOTE:
-    All operator with same priority. if you want to change the priority, use ().
-    zero not support for zero may cause calcuate exception.
+* NOTE: * 
+  All operator with same priority. if you want to change the priority, use (). 
+  _zero_ is not support for _zero_ may cause calcuate exception.
 
+
+
+{{{
 example:
 1.
-    experssion:         2
-    formular tree:    (2)
+    expression:         2
+    formula tree:     (2)
 
 2.
-    experssion:         section_lenth
-    formular tree:    (section_lenth)
+    expression:         section_lenth
+    formula tree:    (section_lenth)
 
 3.
-    experssion:         A + 2
-    formular tree:       (+)
+    expression:         A + 2
+    formula tree:       
+                          (+)
                         /     \
                       (A)      (2)
 
 4.
-    experssion:        3 * A  + (B - 2 ) + C
-    formular tree:  
+    expression:        3 * A  + (B - 2 ) + C
+    formula tree:  
                                      (+) 
                                   /       \
                              (+)           (C)
@@ -41,8 +46,8 @@ example:
                   (3)      (A) (B)    (2)
 
 5.
-    experssion:        3 + A  - B * 2  = 5
-    formular tree:  
+    expression:        3 + A  - B * 2  = 5
+    formula tree:  
                                    (=) 
                                 /       \
                             (*)          (5)
@@ -52,3 +57,8 @@ example:
                   (+)      (B)
                 /     \      
              (3)      (A)
+
+
+}}}
+
+[http://code.google.com/p/tsfriend/wiki/About About page]
