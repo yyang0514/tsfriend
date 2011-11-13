@@ -31,7 +31,7 @@ CContentTree * CStandardTableFormat::ParseContentRoot(CTable * pTbl)
 	Title = GetNameByTable(pTbl);
 	//Title.AppendFormat(DATAFORMAT,PID);
 
-	return AddTableBranch(NULL,Title, (u64)this );
+	return AddTableBranch(NULL,Title, (u64)pTbl );
 }
 
 CString CStandardTableFormat::GetNameByTable(CTable * pTbl)
